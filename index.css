@@ -1,0 +1,111 @@
+body{
+    background: url("images/more-leaves-on-green.png");
+    color: blue;
+}
+
+header, main, footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(40, 40, 43, 0.7);
+    border-radius: 15px;
+}
+
+#display-area, #display-area-off{
+    box-sizing: border-box;
+    align-content: center;
+    padding: 5px;
+    /* background-color: white; */
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.button-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.button-row{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgb(1, 12, 22);
+    border-radius: 5px;
+    border: 3px solid blue;
+}
+
+footer{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.on{
+    background-color: green;
+}
+
+.off{
+    background-color: red;
+}
+
+.display-on{
+    background-color: yellow;
+    text-align: right;
+}
+
+.display-off{
+    background-color: white;
+}
+
+.hide{
+    display: none;
+}
+
+#history-container{
+    height: 100px;
+    width: 400px;
+    overflow: scroll;
+}
