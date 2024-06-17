@@ -1,6 +1,9 @@
 body{
-    background: url("images/more-leaves-on-green.png");
     color: blue;
+}
+
+.background{
+    background: url("images/more-leaves-on-green.png");
 }
 
 header, main, footer{
@@ -33,16 +36,30 @@ header{
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 400px;
+    height: 430px;
     background-color: rgba(40, 40, 43, 0.7);
     border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#display-area, .calculator-container{
+    font-size: 30px;
+    border: 3px solid black;
+}
+
+#display-area{
+    border: 3px solid yellow;
+}
+
+#display-area-off{
+    border: 3px solid black;
 }
 
 #display-area, #display-area-off{
     box-sizing: border-box;
     align-content: center;
     padding: 5px;
-    /* background-color: white; */
+    color: black;
     width: 300px;
     height: 50px;
     margin: 10px;
@@ -58,6 +75,7 @@ header{
     width: 300px;
     background-color: white;
     border-radius: 5px;
+    border: 3px solid black;
 }
 
 .button-row{
@@ -71,9 +89,16 @@ header{
     width: 50px;
     height: 50px;
     margin: 5px;
-    background-color: rgb(1, 12, 22);
+    background-color: rgb(29, 29, 29);
     border-radius: 5px;
-    border: 3px solid blue;
+    border: 3px solid black;
+}
+
+.button:hover{
+    border: 3px solid greenyellow;
+    cursor: pointer;
+    color: rgb(128, 64, 0);
+    background-color: aquamarine;
 }
 
 footer{
@@ -92,7 +117,7 @@ footer{
 }
 
 .display-on{
-    background-color: yellow;
+    background-color: rgb(149, 250, 255);
     text-align: right;
 }
 
@@ -108,4 +133,12 @@ footer{
     height: 100px;
     width: 400px;
     overflow: scroll;
+    background-color: rgb(158, 196, 187);
+    padding: 10px;
+    color: black;
+}
+
+#hist{
+    font-weight: bold;
+    color: black;
 }
